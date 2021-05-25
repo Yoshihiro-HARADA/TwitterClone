@@ -232,7 +232,7 @@ a {
 
 @media screen and (max-width:500px){
     .home .tweet-list .tweet .user{
-        width: 30px;
+        width: 60px;
         padding: 5px 10px 10px 5px;
     }
     .bottom-area .btn{

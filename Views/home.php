@@ -29,7 +29,7 @@
         </div>
         <div class="main">
             <div class="main-header">
-                <h1>home</h1>
+                <h1>ホーム</h1>
             </div>
             <div class="tweet-post">
                 <div class="my-icon">
