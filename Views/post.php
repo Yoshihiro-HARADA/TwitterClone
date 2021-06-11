@@ -1,10 +1,3 @@
-<?php
-
-// 設定を読み込む
-include_once('../confing.php');
-// 便利な関数を読み込む
-include_once('../util.php');
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -21,14 +14,14 @@ include_once('../util.php');
             </div>
             <div class="tweet-post">
                 <div class="my-icon">
-                    <img src="<?php echo HOME_URL; ?>Views/img_uploaded/user/sample-person.jpg" alt="">
+                    <img src="<?php echo htmlspecialchars($view_user['image_path']); ?>" alt="">
                 </div>
                 <div class="input-area">
                     <form action="post.php" method="post" enctype="multipart/form-data">
                     <textarea name="body" placeholder="今どうしてる？" maxlength="140"></textarea>
                     <div class="bottom-area">
                         <div class="mb-0">
-                            <input type="file" mame="image" class="form-control formcontrol">
+                            <input type="file" name="image" class="form-control formcontrol">
                         </div>
                         <button class="btn" type="submit">つぶやく</button>
                     </div>

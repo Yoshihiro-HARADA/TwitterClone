@@ -37,6 +37,7 @@ $view_tweets = [
             <div class="profile-area">
                 <div class="top">
                     <div class="user"><img src="/Twitterclone/Views/img_uploaded/user/sample-person.jpg" alt=""></div>
+                    <!-- <div class="user"><img src="/Twitterclone/Views/img_uploaded/user/sample-person.jpg" alt=""></div> -->
                     
                     <?php if (isset($_GET['user_id'])):?>
                         <!-- 他人のプロフィール -->
