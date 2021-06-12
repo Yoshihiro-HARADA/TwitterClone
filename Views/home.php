@@ -34,7 +34,7 @@
             <?php else : ?>
             <div class="tweet-list">
                 <?php foreach ($view_tweets as $view_tweet) :?>
-                    <?php  include('../Views/common/tweets.php'); ?>
+                    <?php  include('../Views/common/tweet.php'); ?>
                 <?php endforeach;?>
             </div>
             <?php endif;?>

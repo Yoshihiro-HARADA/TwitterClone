@@ -1,6 +1,6 @@
 <?php
 
-// ホームコントローラー
+// サーチコントローラー
 
 // 設定を読み込む
 include_once '../confing.php';
@@ -18,10 +18,15 @@ if (!$user) {
     exit;
 }
 
+// 検索キーワードを取得
+$keyword = null;
+if (isset($_GET['keyword'])) {
+    $keyword = $_GET['keyword'];
+}
+
 // 画面表示
 $view_user = $user;
-
+$view_keyword = $keyword;
 // ツイート一覧 //
-$view_tweets = findTweets($user);
-
-include_once '../Views/home.php';
+$view_tweets = findTweets($user, $keyword);
+include_once '../Views/search.php';
