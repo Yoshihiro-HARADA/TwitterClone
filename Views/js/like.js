@@ -49,7 +49,7 @@ $(function() {
                 // いいね！カウントを増やす
                 like_count++;
                 like_count_obj.html(like_count);
-                this_obj.data('like-id',true);
+                this_obj.data('like-id',data['like_id']);
 
                 // いいね！ボタンの色を青色に変更
                 $(this).find('img').attr('src','../Views/img/icon-heart-twitterblue.svg');
