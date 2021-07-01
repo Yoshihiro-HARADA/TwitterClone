@@ -115,7 +115,7 @@ function findFollowingUserIds(int $follow_user_id)
     $follows = $result->fetch_all(MYSQLI_ASSOC);
 
     // ユーザーIDの一覧を作成
-    $follow_user_ids = [];
+    $following_user_ids = [];
     foreach ($follows as $follow) {
         $following_user_ids[] = $follow['followed_user_id'];
     }
