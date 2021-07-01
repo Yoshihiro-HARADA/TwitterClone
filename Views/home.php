@@ -21,7 +21,7 @@
                     <textarea name="body" placeholder="今どうしてる？" maxlength="140"></textarea>
                     <div class="bottom-area">
                         <div class="mb-0">
-                            <input type="file" mame="image" class="form-control formcontrol">
+                            <input type="file" name="image" class="form-control formcontrol">
                         </div>
                         <button class="btn" type="submit">つぶやく</button>
                     </div>
