@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 // 日本時間あり
 date_default_timezone_set('Asia/Tokyo');
 // URL/ダイレクトリ
-define('HOME_URL','/Twitterclone/');
+define('HOME_URL','/TwitterClone/');
 // データーベースの接続情報
 define('DB_HOST', 'localhost');
 define('DB_USER', 'harada');
