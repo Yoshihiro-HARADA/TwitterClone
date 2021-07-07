@@ -33,12 +33,12 @@ if (isset($_POST['nickname']) && isset($_POST['name']) && isset($_POST['email'])
     }
 
     // 既存チェック
-    if (findUser($data['email'])) {
-        $error_messages[] = 'このメールアドレスは使用されています';
-    }
-    if (findUser($data['name'])) {
-        $error_messages[] = 'このユーザー名は使用されています';
-    }
+    // if (findUser($data['email'])) {
+    //     $error_messages[] = 'このメールアドレスは使用されています';
+    // }
+    // if (findUser($data['name'])) {
+    //     $error_messages[] = 'このユーザー名は使用されています';
+    // }
 
     // ユーザーがなければ登録する
     if (!$error_messages) {
